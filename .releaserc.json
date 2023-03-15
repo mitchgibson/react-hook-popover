@@ -1,0 +1,13 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/gitlab", {
+      "gitlabUrl": "https://gitlab-intouchinsightsystems.msappproxy.net/experiments/intouch-web-components",
+      "assets": [
+        {"path": "dist/index.js", "label": "@intouch/intouch-web-components"}
+      ]
+    }]
+  ]
+}
